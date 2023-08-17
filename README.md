@@ -1,4 +1,4 @@
-# Project
+# Pierre d'Anselme's project 
 
 # Context :
 
