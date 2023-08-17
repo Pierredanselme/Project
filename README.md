@@ -10,7 +10,7 @@ I think it is a good way to use all the notions that we study and to add more li
 #Algorithm :
 
   INTPUT
-    - Specific sequence of a disease A (DNA)
+  /n  - Specific sequence of a disease A (DNA)
     - Specific sequence of a disease B (RNA)
     - The DNA sequence of the person
     - A dictionary that convert DNA into RNA
