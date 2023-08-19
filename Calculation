@@ -1,1 +1,9 @@
-python
+def transcription(DNA):
+    
+    RNA = ''
+    trans = {'A': 'U', 'T': 'A', 'C': 'G', 'G': 'C'}
+    
+    for base in DNA:
+        RNA += trans[base] 
+            
+    return RNA
