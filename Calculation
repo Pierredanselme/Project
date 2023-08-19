@@ -4,6 +4,6 @@ def transcription(DNA):
     trans = {'A': 'U', 'T': 'A', 'C': 'G', 'G': 'C'}
     
     for base in DNA:
-        RNA += trans[base] if base in trans
-            
+        RNA += trans[base] 
+
     return RNA
