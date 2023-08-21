@@ -10,5 +10,13 @@ def transcription(Ts):
 
 def main(DNA):
     B = transcription(DNA)
+    D_A =
+    D_B =
+
+    if D_A in DNA:
+        print('You have the disease A')
+    else:
+        print('You do not have the disease A')
+
 
 
