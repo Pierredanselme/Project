@@ -1,4 +1,4 @@
-# Pierre d'Anselme's project 
+# Identification of a disease
 
 # Context :
 
