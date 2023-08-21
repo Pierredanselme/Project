@@ -24,10 +24,15 @@ Where A,T,C,G are nucleotids (parts of the DNA)
     - A dictionary that convert DNA into RNA
 
   PROCESS
+  
     - Put into variable A and B the specific sequence of this diseases /
+    
     - Ask for the DNA sequence of the "patient" /
+    
     - Compare the DNA sequence of the patient with the sequence A  /
+    
     - Return if the patient have the disease A /
+    
     - Convert DNA into RNA  /
     - Compare the RNA sequence of the patient with the sequence B /
     - Return of the patient have the disease B
