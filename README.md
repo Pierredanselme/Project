@@ -11,6 +11,7 @@ For information the transcription transform A-> U,   T -> A,   C -> G,  and  G -
 
 Where A,T,C,G are nucleotids (parts of the DNA)
 
+
 #Algorithm :
 
   INTPUT
