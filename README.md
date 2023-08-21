@@ -6,6 +6,7 @@ All Human have DNA that can mutate into different things and also create disease
 However, if we can identify a specific sequence of a specific disease and then add it on the program; we can compare the sequence with the DNA of a person, to see if this person have the disease. 
 In addition, diseases can be transcribed into RNA and then protein, so we can also search for specific sequence in the RNA of the person.
 I think it is a good way to use all the notions that we study and to add more like dictionary etc.. It is also link to my courses in the Tec like biology.
+
 For information the transcription transform A-> U  T -> A  C -> G and G -> C
 
 #Algorithm :
