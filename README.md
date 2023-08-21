@@ -14,9 +14,13 @@ Where A,T,C,G are nucleotids (parts of the DNA)
 #Algorithm :
 
   INTPUT
+  
     - Specific sequence of a disease A (DNA) /
+    
     - Specific sequence of a disease B (RNA) /
+    
     - The DNA sequence of the person /
+    
     - A dictionary that convert DNA into RNA
 
   PROCESS
