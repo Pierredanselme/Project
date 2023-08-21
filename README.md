@@ -8,6 +8,7 @@ In addition, diseases can be transcribed into RNA and then protein, so we can al
 I think it is a good way to use all the notions that we study and to add more like dictionary etc.. It is also link to my courses in the Tec like biology.
 
 For information the transcription transform A-> U,   T -> A,   C -> G,  and  G -> C
+Where A,T,C,G are nucleotids (parts of the DNA)
 
 #Algorithm :
 
