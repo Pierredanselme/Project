@@ -1,9 +1,14 @@
-def transcription(DNA):
+def transcription(Ts):
     
     RNA = ''
     trans = {'A': 'U', 'T': 'A', 'C': 'G', 'G': 'C'}
     
-    for base in DNA:
+    for base in TS:
         RNA += trans[base] 
 
     return RNA
+
+def main(DNA):
+    B = transcription(DNA)
+
+
