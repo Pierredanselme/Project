@@ -9,6 +9,7 @@ def transcription(Ts):
     return RNA
 
 def main(DNA):
+
     B = transcription(DNA)
     D_A = 'AATTCC'
     D_B = 'UUA'
