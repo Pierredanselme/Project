@@ -10,8 +10,8 @@ def transcription(Ts):
 
 def main(DNA):
     B = transcription(DNA)
-    D_A =
-    D_B =
+    D_A = 'AATTCC'
+    D_B = 'UUA'
 
     if D_A in DNA:
         print('You have the disease A')
