@@ -1,4 +1,4 @@
-def transcription(Ts):
+def transcription(Ts):                                     # secondary program that transcribe DNA in RNA, it will be used for the disease B
     
     RNA = ''
     trans = {'A': 'U', 'T': 'A', 'C': 'G', 'G': 'C'}
@@ -11,13 +11,14 @@ def transcription(Ts):
 def main(DNA):
 
     B = transcription(DNA)
-    D_A = 'AATTCC'
-    D_B = 'UUA'
+    D_A = 'AATTCC'                                           # specific sequence of the disease A (impact DNA)
+    D_B = 'UUA'                                              # specific sequence of the disease B (impact RNA)
 
-    if D_A in DNA:
+    if D_A in DNA:      # check if the patient has the disease A
         print('You have the disease A')
     else:
         print('You do not have the disease A')
 
 
+# miss the disease B 
 
