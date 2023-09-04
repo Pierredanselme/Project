@@ -8,8 +8,8 @@ def transcription(Ts):                                     # secondary program t
 
     return RNA
 
-def main(DNA):
-
+def main():
+    DNA = input('Give me your special DNA for this part: ')
     B = transcription(DNA)
     D_A = 'AATTCC'                                           # specific sequence of the disease A (impact DNA)
     D_B = 'UUA'                                              # specific sequence of the disease B (impact RNA)
@@ -29,8 +29,7 @@ def main(DNA):
     else:
         print('You do not have the disease B')
 
-#main('AATTCC') it print this:
-  #You do not have the disease A
+main()
   #You do not have the disease B
 
 
