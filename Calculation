@@ -19,6 +19,18 @@ def main(DNA):
     else:
         print('You do not have the disease A')
 
+    B= transcription(DNA)
+    if D_B in B:
+        print('You have the disease B')
+
+    else:
+        print('You do not have the disease B')
+
+#main('AATTCC') it print this:
+  #You have the disease A
+  #You have the disease B
+
+
 
 # miss the disease B 
 
