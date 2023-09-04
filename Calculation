@@ -3,7 +3,7 @@ def transcription(Ts):                                     # secondary program t
     RNA = ''
     trans = {'A': 'U', 'T': 'A', 'C': 'G', 'G': 'C'}
     
-    for base in TS:
+    for base in trans:
         RNA += trans[base] 
 
     return RNA
