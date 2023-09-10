@@ -30,7 +30,7 @@ def main():
         print('You do not have the disease B')
 
 main()
-  #You do not have the disease B
+ 
 
 
 
