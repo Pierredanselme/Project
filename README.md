@@ -20,7 +20,7 @@ Where A,T,C,G are nucleotids (parts of the DNA)
     
     - Specific sequence of a disease B (RNA) 
     
-    - The DNA sequence of the person 
+    - The DNA sequence of the person (the sequence that code for the texture of the skin that can have 2 diseases)
     
     - A dictionary that convert DNA into RNA
 
