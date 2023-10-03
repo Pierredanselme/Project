@@ -8,14 +8,14 @@ def transcription(Ts):                                     # secondary program t
 
     return RNA
 
-def main():
+def main(): # check if you have some disease link to skin's texture
     DNA = input('Give me your special DNA for this part: ')  # You need to give the special sequence of DNA that code for the the texture of the skin (to see if it is correct of it has a mutation)
     B = transcription(DNA)
     D_A = 'AATTCC'                                           # specific sequence of the disease A (impact DNA)
     D_B = 'UUA'                                              # specific sequence of the disease B (impact RNA)
     conclusions = []
     for i in DNA:
-        if i not in 'ATCG':
+        if i not in 'ATCG':     #DNA only have 4 letters 
             conclusions.append('We ask for the DNA only')
             break  
 
