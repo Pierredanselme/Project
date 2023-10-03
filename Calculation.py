@@ -13,25 +13,22 @@ def main():
     B = transcription(DNA)
     D_A = 'AATTCC'                                           # specific sequence of the disease A (impact DNA)
     D_B = 'UUA'                                              # specific sequence of the disease B (impact RNA)
-
-    for i in DNA:        # Check if it is only DNA
+    conclusions = []
+    for i in DNA:
         if i not in 'ATCG':
-            return 'We ask for the DNA only'
+            conclusions.append('We ask for the DNA only')
+            break  
 
-    if D_A in DNA:      # check if the patient has the disease A
-        print('You have the disease A')
+    if D_A in DNA:
+        conclusions.append('You have the disease A')
     else:
-        print('You do not have the disease A')
+        conclusions.append('You do not have the disease A')
 
     if D_B in B:
-        print('You have the disease B')
-
+        conclusions.append('You have the disease B')
     else:
-        print('You do not have the disease B')
+        conclusions.append('You do not have the disease B')
+
+    print(conclusions)
 
 main()
- 
-
-
-
-
