@@ -15,35 +15,38 @@ Where A,T,C,G are nucleotids (parts of the DNA)
 #Algorithm :
 
   INTPUT
-  
-    - Specific sequence of a disease A (DNA) 
-    
-    - Specific sequence of a disease B (RNA) 
+
+    - The choice of what test you want to have
     
     - The DNA sequence of the person (the sequence that code for the texture of the skin that can have 2 diseases)
     
-    - A dictionary that convert DNA into RNA
+    - (A dictionary that convert DNA into RNA and the sequences of the diseases) already in the program
 
 
   PROCESS
-  
-    - Put into variable A and B the specific sequence of this diseases 
+
+    - Choose an option for the test that you want 
     
-    - Ask for the DNA sequence of the "patient" 
-    
-    - Compare the DNA sequence of the patient with the sequence A  
-    
-    - Return if the patient have the disease A 
-    
-    - Convert DNA into RNA  
-    
-    - Compare the RNA sequence of the patient with the sequence B 
-    
-    - Return of the patient have the disease B
+    - With the option that the user enter, open the program that can do this option 
+
+        For the disease A and B : 
+                                    - Ask the user for their special sequences 
+                                    - Return the result (you have / don't have the disease)
+
+        For the registration:
+                                    - Open a file 
+                                    - Ask for the name of the user 
+                                    - Write the patient's result with his name in a file
+                                    - Close the file
+
+        For the program the show the file :
+                                                - Open the file 
+                                                - Read it in the console
+                                                - Close the file
 
     
   OUTPUT
   
-    - True/False for the disease A 
+    - The result of your test ( you have / you have not the disease ) if you put 1 or 2
     
-    - True/False for the disease B
+    - The file with all the patient if you put 3
