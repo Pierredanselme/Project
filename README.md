@@ -21,6 +21,8 @@ For information the transcription transform A-> U,   T -> A,   C -> G,  and  G -
     - The choice of what test you want to have
     
     - The DNA sequence of the person (the sequence that code for the texture of the skin that can have 2 diseases)
+
+    - Your name if you want to register 
     
     - (A dictionary that convert DNA into RNA and the sequences of the diseases) already in the program
 
