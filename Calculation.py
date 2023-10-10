@@ -1,34 +1,75 @@
-def transcription(Ts):                                     # secondary program that transcribe DNA in RNA, it will be used for the disease B
-    
+def transcription(Ts):         #Program that convert DNA into RNA for the disease B
     RNA = ''
     trans = {'A': 'U', 'T': 'A', 'C': 'G', 'G': 'C'}
-    
-    for base in trans:
-        RNA += trans[base] 
+
+    for base in Ts:
+        if base in trans:
+            RNA += trans[base]
+        else:
+            RNA += base
 
     return RNA
 
-def main(): # check if you have some disease link to skin's texture
-    DNA = input('Give me your special DNA for this part: ')  # You need to give the special sequence of DNA that code for the the texture of the skin (to see if it is correct of it has a mutation)
-    B = transcription(DNA)
-    D_A = 'AATTCC'                                           # specific sequence of the disease A (impact DNA)
-    D_B = 'UUA'                                              # specific sequence of the disease B (impact RNA)
-    conclusions = []
-    for i in DNA:
-        if i not in 'ATCG':     #DNA only have 4 letters 
-            conclusions.append('We ask for the DNA only')
-            break  
-
-    if D_A in DNA:
-        conclusions.append('You have the disease A')
+def check_disease_A(DNA):      #Program that compare your DNA with the special sequence of the disease A to see if you have it
+    
+    D_A = 'AATTCC'
+    if D_A in DNA.upper():
+        return 'I am sorry but you have the disease A'
     else:
-        conclusions.append('You do not have the disease A')
+        return 'You do not have the disease A, good news'
 
-    if D_B in B:
-        conclusions.append('You have the disease B')
+def check_disease_B(RNA):     #Program that compare your DNA with the special sequence of the disease B to see if you have it
+    D_B = 'UUA'
+    if D_B in RNA.upper():
+        return 'I am sorry but you have the disease B'
     else:
-        conclusions.append('You do not have the disease B')
+        return 'You do not have the disease B, very good news'
 
-    print(conclusions)
+def menu():                   #Program that display the menu
+    print("Welcome to our lab, please choose an option:")
+    print("1. Check for disease A")
+    print("2. Check for disease B")
+    print("3. Check the file")
+    print("4. Leave")
+
+def save_results(patient_name, result):    #Program that register your name and the result of your tests
+    file = open("results.txt", "a")
+    file.write("Patient: " + patient_name + "\n")
+    file.write("Result: " + result + "\n\n")
+    file.close()
+
+def open_results_file():                   # Program taht show all the patient's results
+    
+    file = open("results.txt", "r")
+    contents = file.read()
+    file.close()
+    print(contents)
+    
+ 
+def main():                               # This is the menu that will link all the programs
+    while True:
+        menu()
+        choice = input("Enter your choice please : ")
+
+        if choice == '1':
+            DNA = input("Enter your DNA sequence for the special part of the 6th chromosome (only 6 letters) : ")
+            result = check_disease_A(DNA)
+            print(result)
+            patient_name = input("Enter your name: ")
+            save_results(patient_name, result)
+        elif choice == '2':
+            DNA = input("Enter your DNA sequence for the special part of the 5th chromosome (only 3 letters): ")
+            RNA = transcription(DNA)
+            result = check_disease_B(RNA)
+            print(result)
+            patient_name = input("Enter your name for the registration: ")
+            save_results(patient_name, result)
+        elif choice == '3':
+            open_results_file()
+        elif choice == '4':
+            break
+        else:
+            print("Invalid choice. Please select 1, 2, 3, or 4.")
+
 
 main()
