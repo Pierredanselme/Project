@@ -48,6 +48,24 @@ For information the transcription transform A-> U,   T -> A,   C -> G,  and  G -
                                                 - Read it in the console
                                                 - Close the file
 
+
+
+TEST PLAN :
+
+# Test plan 
+   
+    # If I ask for the test of the disease A and my DNA is AAGTct --> You do not have the disease A, good news
+    # Then he will ask me for my name --> Pierre A
+    
+    # If I ask for the test of the disease B and my DNA is AAT --> I am sorry but you have the disease B
+    # Then he will ask me for my name --> Pierre B
+    
+    #If I ask him to print the list --> Patient: Pierre A
+                                       #Result: You do not have the disease A, good news
+                                       
+                                       #Patient: Pierre B
+                                       #Result: I am sorry but you have the disease B
+
     
   OUTPUT
   
